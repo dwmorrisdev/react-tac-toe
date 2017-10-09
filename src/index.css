@@ -1,0 +1,106 @@
+/* 
+colors:
+    light slate gray: #77878B
+    dark slate gray: #305252
+    onyx: #373E40
+    wintergreen dream: #488286
+    pale aqua: #B7D5D4
+*/
+
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 0px;
+    background: #305252;
+    color:#77878B;
+  }
+
+  .header{
+    background: #373e40;
+    margin: 0;
+    padding: 25px;
+    padding-left: 45px;
+    border-bottom: 3px solid #488286;
+  }
+  
+  .header>p{
+      margin-left: 60px;
+      font-size: 18px;
+      color: #B7D5D4;
+  }
+
+  .header>h1{
+      font-size: 35px;
+      color: #488286;
+  }
+  
+  ol, ul {
+    padding-left: 30px;
+  }
+  
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+  }
+  
+  .square {
+    background: #77878B;
+    border: 2px solid #373E40;
+    border-radius: 5px;
+    float: left;
+    font-size: 162px;
+    font-weight: bold;
+    line-height: 58px;
+    height: 250px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 250px;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
+  
+  .game {
+    margin-left: 25%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .game-info {
+    margin-left: 40px;
+    font-size: 20px;
+    color: #B7D5D4;
+  }
+
+  .button{
+      background: #488286;
+      border: 0px;
+      border-bottom: 3px solid #373E40;
+      padding: 10px;
+      border-radius: 3px;
+      margin: 10px;
+      font-size: 20px;
+      
+  }
+
+  .status{
+     margin-left: 30px;
+     font-weight: bold;
+  }
+
+  .win-square{
+    background: yellow;
+  }
+  
