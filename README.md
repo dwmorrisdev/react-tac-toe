@@ -1,3 +1,11 @@
+This is the REACT TIC-TAC-TOE App as covered in the react.js tutorials. This was a practical excercise and then refactored including the extra functionality described in the excersize. Feel free to contact me with any questions or comments. 
+
+To View: clone the repo and build. Navigate to the location and run npm start. Default Browser will open to localhost where you will see the working app with new styles. 
+
+Have fun!
+
+Below you will find the documentation provided along with the create-react-app template: 
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
