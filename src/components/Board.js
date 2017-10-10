@@ -28,23 +28,24 @@ class Board extends React.Component {
      
      if(winSquares) {
        if(i === winSquares[0] || i === winSquares[1] || i === winSquares[2]) {
-         console.log('background color should be set for square: ', i);
-         return <Square 
-                  key={i} 
-                  className="win-square"
-                  style={ {backgroundColor: 'yellow'} } 
+         //console.log('background color should be set for square: ', i);
+         return (
+              <div className="win-square" key={i}>
+                <Square 
                   value={ this.props.squares[i] } 
-                  onClick={ () => this.props.onClick(i) } />;
+                  onClick={ () => this.props.onClick(i) } />
+              </div>);
        } else {
-         console.log('winsquares is true, but color wasnt set');
-         return <Square 
-                  key={i} 
-                  value={ this.props.squares[i] } 
-                  onClick={ () => this.props.onClick(i) } />;
+         // console.log('winsquares is true, but color wasnt set');
+         return ( <div className="non-win" key={i} >
+                    <Square 
+                      value={ this.props.squares[i] } 
+                      onClick={ () => this.props.onClick(i) } />
+                  </div>);
        }
       
      } else {
-       console.log('winsquares was false');
+       // console.log('winsquares was false');
        return <Square 
                 key={i} 
                 value={ this.props.squares[i] } 

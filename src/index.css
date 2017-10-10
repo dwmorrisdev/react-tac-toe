@@ -18,8 +18,9 @@ body {
     background: #373e40;
     margin: 0;
     padding: 25px;
-    padding-left: 45px;
+    padding-left: 255px;
     border-bottom: 3px solid #488286;
+    
   }
   
   .header>p{
@@ -72,7 +73,7 @@ body {
   }
   
   .game {
-    margin-left: 25%;
+    margin-left: 20%;
     margin-top: 2%;
     display: flex;
     flex-direction: row;
@@ -94,13 +95,25 @@ body {
       font-size: 20px;
       
   }
+  .toggle{
+    margin-left: 60px;
+  }
 
   .status{
      margin-left: 30px;
+     font-size: 40px;
      font-weight: bold;
   }
 
-  .win-square{
-    background: yellow;
+  .win-square > button {
+    background: green;
   }
-  
+
+  .non-win > button{
+    background: #77878B;
+  }
+
+  .win-square,.non-win{
+    display: inline-block;
+    margin-bottom: -3px;
+  }

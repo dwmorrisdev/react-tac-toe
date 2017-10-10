@@ -130,7 +130,7 @@ class Game extends React.Component {
                 </div>
                 <div className="game-info">
                     <div className="status">{ status }</div>
-                    {history.length >= 1 && <button className="button" onClick={ (i) => this.handleToggleOrder(i) }>Toggle Order</button>}
+                    {history.length >= 2 && <button className="button toggle" onClick={ (i) => this.handleToggleOrder(i) }>Toggle Order</button>}
                     <ol>{moves}</ol>
                 </div>
                 </div>
